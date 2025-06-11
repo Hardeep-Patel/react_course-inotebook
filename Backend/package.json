@@ -1,5 +1,5 @@
 {
-  "name": "inodebook-backend",
+  "name": "inotebook",
   "version": "1.0.0",
   "description": "inotebook - your notebook on the cloud",
   "main": "index.js",
