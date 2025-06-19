@@ -15,6 +15,7 @@ const Notes = (props) => {
     }else {
       nevigate("/login");
     }
+    // eslint-disable-next-line
   }, []);
   const [note, setNote] = useState({
     id: "",

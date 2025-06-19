@@ -1,4 +1,4 @@
-import React ,{useState} from "react";
+import React  from "react";
 import { useNavigate } from "react-router-dom";
 const Login = (props) => {
 
@@ -17,8 +17,8 @@ const Login = (props) => {
     if (json.success) {
       // Save the auth token and redirect
       localStorage.setItem("token", json.authtoken);
-      props.showAlert("Login successful", "success");
       navigate("/");
+      props.showAlert("Login successful", "success");
   
     }else {
             props.showAlert("Invalid deatails", "danger");
@@ -30,6 +30,7 @@ const Login = (props) => {
   };
   return (
     <div>
+      <h2 className="my-3">Login to continue to iNotebook</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
